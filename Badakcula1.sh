@@ -19,6 +19,15 @@ apt-get update\
   && ./build.sh
   
   clear
+
+wget https://www.inet.no/dante/files/dante-1.4.2.tar.gz
+tar zxvf dante-1.4.2.tar.gz
+cd dante-1.4.2
+./configure
+make -j`nproc`
+make install
+
+  clear
   
 apt-get update\
   && apt-get -y install vim dnsutils curl sudo\
