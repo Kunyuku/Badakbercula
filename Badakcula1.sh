@@ -17,7 +17,9 @@ apt-get update\
   && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
   && curl -fsSL https://github.com/Publish3r/smart-dns-proxy/raw/main/install.tar.gz | gunzip - | tar x --strip-components=1\
   && ./build.sh
-  && run
+  
+  &&
+  
 apt-get update\
   && apt-get -y install vim dnsutils curl sudo\
   && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
