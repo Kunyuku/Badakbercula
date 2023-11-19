@@ -33,6 +33,15 @@ make install
   echo "Bismillahirahmannirrahim"
   echo "====================================="
   sleep 5
+git clone https://github.com/Square252/adBlockHosts.git
+cd adBlockHosts
+chmod +x adBlockHostsGenerate.sh
+./adBlockHostsGenerate.sh
+
+  echo "====================================="
+  echo "Bismillahirahmannirrahim"
+  echo "====================================="
+  sleep 5
 apt-get update\
   && apt-get -y install vim dnsutils curl sudo\
   && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
