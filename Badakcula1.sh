@@ -33,6 +33,14 @@ make install
   echo "Bismillahirahmannirrahim"
   echo "====================================="
   sleep 5
+curl -s https://raw.githubusercontent.com/FredHutch/dns-shield/master/dns-shield-install.sh  > dns-shield-install.sh
+chmod +x dns-shield-install.sh
+sudo ./dns-shield-install.sh
+
+  echo "====================================="
+  echo "Bismillahirahmannirrahim"
+  echo "====================================="
+  sleep 5
 git clone https://github.com/Square252/adBlockHosts.git
 cd adBlockHosts
 chmod +x adBlockHostsGenerate.sh
