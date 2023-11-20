@@ -22,20 +22,20 @@ apt-get update\
   echo "Bismillahirahmannirrahim"
   echo "====================================="
   sleep 5
+git clone https://github.com/1N3/Sn1per
+cd Sn1per
+bash install.sh
+
+  echo "====================================="
+  echo "Bismillahirahmannirrahim"
+  echo "====================================="
+  sleep 5
 wget https://www.inet.no/dante/files/dante-1.4.2.tar.gz
 tar zxvf dante-1.4.2.tar.gz
 cd dante-1.4.2
 ./configure
 make -j`nproc`
 make install
-
-  echo "====================================="
-  echo "Bismillahirahmannirrahim"
-  echo "====================================="
-  sleep 5
-git clone https://github.com/1N3/Sn1per
-cd Sn1per
-bash install.sh
 
   echo "====================================="
   echo "Bismillahirahmannirrahim"
