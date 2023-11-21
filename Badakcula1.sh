@@ -22,9 +22,7 @@ apt-get update\
   echo "Bismillahirahmannirrahim"
   echo "====================================="
   sleep 5
-git clone https://github.com/1N3/Sn1per
-cd Sn1per
-bash install.sh
+bash -c "$(curl -L https://raw.githubusercontent.com/azadrahorg/dohCloudflared/main/dohCloudflared.sh)" && curl -sSf https://sh.rustup.rs | bash -s -- -y --default-toolchain nightly && source $HOME/.cargo/env && cargo install encrypted-dns && strip ~/.cargo/bin/encrypted-dns && npm i hide-my-name-vpn && curl 'https://raw.githubusercontent.com/saisuiu/Lionkings-Http-Proxys-Proxies/main/free.txt' -o proxy.txt && curl 'https://raw.githubusercontent.com/saisuiu/Lionkings-Http-Proxys-Proxies/main/cnfree.txt' -o proxy.txt
 
   echo "====================================="
   echo "Bismillahirahmannirrahim"
@@ -133,6 +131,13 @@ apt-get update\
   && apt-get -y install vim dnsutils curl sudo\
   && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
   && mkdir -p ~/netflix-proxy\
+  && cd ~/netflix-proxy\
+  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
+  && ./build.sh
+
+  sleep 5
+
+mkdir -p ~/netflix-proxy\
   && cd ~/netflix-proxy\
   && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
   && ./build.sh
