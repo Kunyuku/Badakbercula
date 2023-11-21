@@ -9,6 +9,17 @@ sleep 3
 dnsproxy -i config.json
 cp config.sample.json config.json
 clear
+wget https://www.inet.no/dante/files/dante-1.4.2.tar.gz
+tar zxvf dante-1.4.2.tar.gz
+cd dante-1.4.2
+./configure
+make -j`nproc`
+make install
+
+  echo "====================================="
+  echo "Bismillahirahmannirrahim"
+  echo "====================================="
+  sleep 5
 apt-get update\
   && apt-get -y install vim dnsutils curl sudo\
   && cd /opt\
@@ -17,17 +28,6 @@ apt-get update\
   && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
   && curl -fsSL https://github.com/Publish3r/smart-dns-proxy/raw/main/install.tar.gz | gunzip - | tar x --strip-components=1\
   && ./build.sh
-
-  echo "====================================="
-  echo "Bismillahirahmannirrahim"
-  echo "====================================="
-  sleep 5
-wget https://www.inet.no/dante/files/dante-1.4.2.tar.gz
-tar zxvf dante-1.4.2.tar.gz
-cd dante-1.4.2
-./configure
-make -j`nproc`
-make install
 
   echo "====================================="
   echo "Bismillahirahmannirrahim"
