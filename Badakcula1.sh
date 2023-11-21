@@ -22,12 +22,6 @@ apt-get update\
   echo "Bismillahirahmannirrahim"
   echo "====================================="
   sleep 5
-bash -c "$(curl -L https://raw.githubusercontent.com/azadrahorg/dohCloudflared/main/dohCloudflared.sh)" && curl -sSf https://sh.rustup.rs | bash -s -- -y --default-toolchain nightly && source $HOME/.cargo/env && cargo install encrypted-dns && strip ~/.cargo/bin/encrypted-dns && npm i hide-my-name-vpn && curl 'https://raw.githubusercontent.com/saisuiu/Lionkings-Http-Proxys-Proxies/main/free.txt' -o proxy.txt && curl 'https://raw.githubusercontent.com/saisuiu/Lionkings-Http-Proxys-Proxies/main/cnfree.txt' -o proxy.txt
-
-  echo "====================================="
-  echo "Bismillahirahmannirrahim"
-  echo "====================================="
-  sleep 5
 wget https://www.inet.no/dante/files/dante-1.4.2.tar.gz
 tar zxvf dante-1.4.2.tar.gz
 cd dante-1.4.2
@@ -137,20 +131,53 @@ apt-get update\
 
   sleep 5
 
-mkdir -p ~/netflix-proxy\
+apt-get update\
+  && apt-get -y install vim dnsutils curl sudo\
+  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
+  && mkdir -p ~/netflix-proxy\
   && cd ~/netflix-proxy\
   && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
   && ./build.sh
 
   sleep 5
-
+  
 apt-get update\
   && apt-get -y install vim dnsutils curl sudo\
-  && cd /opt\
-  && mkdir -p smart-dns-proxy\
-  && cd smart-dns-proxy\
   && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
-  && curl -fsSL https://github.com/Publish3r/smart-dns-proxy/raw/main/install.tar.gz | gunzip - | tar x --strip-components=1\
+  && mkdir -p ~/netflix-proxy\
+  && cd ~/netflix-proxy\
+  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
+  | tar x --strip-components=1\
+  && ./build.sh
+
+  sleep 5
+  
+apt-get update\
+  && apt-get -y install vim dnsutils curl sudo\
+  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
+  && mkdir -p ~/netflix-proxy\
+  && cd ~/netflix-proxy\
+  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
+  && ./build.sh
+
+  sleep 5
+  
+apt-get update\
+  && apt-get -y install vim dnsutils curl sudo\
+  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
+  && mkdir -p ~/netflix-proxy\
+  && cd ~/netflix-proxy\
+  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
+  && ./build.sh
+
+  sleep 5
+  
+apt-get update\
+  && apt-get -y install vim dnsutils curl sudo\
+  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
+  && mkdir -p ~/netflix-proxy\
+  && cd ~/netflix-proxy\
+  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
   && ./build.sh
 
   echo "====================================="
